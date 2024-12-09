@@ -1,0 +1,29 @@
+/* Make sure the nav is relative so the search box can be positioned properly */
+nav.relative {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Create a space for the search box, if it's shown */
+  .search-box-container {
+    display: flex;
+    align-items: center;
+    margin-left: 2px; /* Adjusts distance between the link and the search box */
+  }
+  
+  /* Style the search box */
+  .search-box {
+    padding: 4px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    width: 300px; /* Adjust width as needed */
+    outline: none;
+    transition: border-color 0.3s ease;
+  
+  }
+  
+  .search-box:focus {
+    border-color: #0d6170;
+  }
+  

@@ -1,0 +1,25 @@
+<div class="bg-cyan-800 text-white p-6 flex justify-between items-center text-base">
+  
+    <h5 class="text-2xl  font-semibold align-bottom">
+      <i class="fa-solid fa-shop fa-2xl pl-40" style="color: #eaeff6;"></i>      
+          Products Admin Store
+    </h5>
+    <nav class="flex gap-9 relative">
+      <button routerLink="/add-product" class="btn btn-primary">
+        <i class="fa-solid fa-puzzle-piece"></i> Add Products
+      </button>
+
+      <a href="#">Search
+       <input 
+      type="text" 
+      placeholder="Search by product name..." 
+      class="search-box"
+      [(ngModel)]="searchTerm"  
+      (input)="onSearchChange()"  
+      style="color: black;"
+      /> 
+
+    </a>
+</nav>
+  </div>
+  

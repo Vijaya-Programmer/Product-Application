@@ -1,0 +1,17 @@
+<div class="product-grid">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 rounded-xl">
+    <div *ngFor="let product of paginatedProducts" class="bg-gray-200 p-4 rounded-2xl shadow hover:shadow-2xl transition border-cyan-800">
+      <img [src]="product.pictureUrl" alt="{{ product.name }}" class="w-100 h-100 object-cover rounded-2xl" />
+      <h3 class="mt-2 text-lg font-bold">{{ product.name }}</h3>
+      <p class="text-sm text-gray-600">{{ product.type }}</p>
+      <p class="mt-1 text-xl font-semibold text-blue-500">$ {{ product.price }}</p>
+      <p class="text-sm text-gray-600 mt-2">{{ product.description }}</p>
+    </div>
+  </div>
+</div>
+
+<div class="pagination">
+  <button (click)="changePage(currentPage - 1)" [disabled]="currentPage === 1">Previous</button>
+  <span>Page {{ currentPage }} of {{ totalPages }}</span>
+  <button (click)="changePage(currentPage + 1)" [disabled]="currentPage === totalPages">Next</button>
+</div>

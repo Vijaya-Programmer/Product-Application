@@ -1,0 +1,19 @@
+/* src/app/add-product/add-product.component.css */
+.input, .textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1.5px solid  #075d75;
+}
+
+.btn-primary {
+  background-color: #377485;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}

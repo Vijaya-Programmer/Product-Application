@@ -1,0 +1,29 @@
+
+nav.relative {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+
+.search-box-container {
+  display: flex;
+  align-items: center;
+  margin-left: 2px; 
+}
+
+
+.search-box {
+  padding: 4px;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  width: 300px; 
+  outline: none;
+  transition: border-color 0.3s ease; 
+
+}
+
+.search-box:focus {
+  border-color: #0d6170;
+
+}

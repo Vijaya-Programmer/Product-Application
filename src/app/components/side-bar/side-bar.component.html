@@ -1,0 +1,33 @@
+
+<div class="w-64 bg-gray-200 h-full p-4 shadow-md">
+   
+    
+    <h2 class="text-lg font-bold   mb-4 text-cyan-800">Product Management</h2>
+    <ul>
+      <li class="mb-2 font-normal"> 
+        <a class="text-cyan-700 hover:underline" routerLink="/add-product">
+          Add Product
+        </a>
+      </li>
+      <li class="mb-2 font-normal">
+        <a class="text-cyan-700 hover:underline" routerLink="/allproducts">
+          All Product
+        </a>
+      </li>
+      <li class="mb-2 font-normal">
+        <a class="text-cyan-700 hover:underline" routerLink="/manageProduct">
+          Manage Products
+        </a>
+      </li>
+
+    </ul>
+    <h2 class="text-lg font-semibold mb-4 text-cyan-800">Categories</h2>
+    <ul>
+      <li *ngFor="let category of categories" class="mb-2 font-normal">
+        <a routerLink="{{ category.route }}" class="text-cyan-700 hover:underline">
+          {{ category.name }}
+        </a>
+      </li>
+    </ul>
+    </div>
+  
